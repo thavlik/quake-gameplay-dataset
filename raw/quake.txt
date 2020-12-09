@@ -1,13 +1,3 @@
-# (preliminary) quake dataset links
-# Permission has so far been granted from:
-# - Shambler/[Team Shambler](https://www.youtube.com/user/FiendUK1)
-# - dumptruck_ds
-# - Spirit (Quaddicted)
-# - Daz (CustomGamer)
-# - JCR 9001
-# - Greenwood
-# - zigi
-
 # shambler
 https://www.youtube.com/watch?v=2L63xT49Fh4
 https://www.youtube.com/watch?v=u_CUj_Fsi-k
