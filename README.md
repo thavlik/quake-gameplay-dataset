@@ -19,7 +19,7 @@ Custom maps and a few weapon/enemy mods made their way into dataset. Future effo
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
 
-## Running Code
+## Compiling From Raw
 The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository.
 
 ## Contributors
