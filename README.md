@@ -19,6 +19,9 @@ Custom maps and a few weapon/enemy mods made their way into dataset. Future effo
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
 
+## Running Code
+The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository.
+
 ## Contributors
 Gameplay videos are sourced from YouTube with permission. Special thanks to the following creators for their contributions to the community. They are good folk. 
 - [Shambler/Team Shambler](https://www.youtube.com/user/FiendUK1)

@@ -1,5 +1,0 @@
-numpy
-boto3
-youtube_dl
-Pillow
-decord
