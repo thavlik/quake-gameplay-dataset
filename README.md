@@ -15,7 +15,7 @@ Custom maps and a few weapon/enemy mods made their way into dataset. Future effo
 | --------------- | --- | ---------- | ----------- | --------
 | 320x240         | 15  | -          | -           | TODO
 | 640x480         | 15  | -          | -           | TODO
-| Source*         | 30  | -          | 0           | TODO
+| Source*         | 30  | 238        | 0           | TODO
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
 
