@@ -37,6 +37,39 @@ The hosting costs for this project are negligible, but an inconsiderately writte
 
 **If your goal is to copy the entire bucket for the purpose of hosting a duplicate copy for others to use, by all means download the entire bucket.**
 
+
+## How To Use
+There are several existing Python solutions for loading frames from a directory of videos. [decord](https://github.com/dmlc/decord) is currently the most promising, given its narrowly tailored focus of machine learning. Generally, the API entails pointing the loader at a directory containing video files:
+```python
+import os
+import torch
+from decord import VideoLoader, cpu
+
+# Configure decord to output torch.Tensor
+# You can also do this for Tensorflow, etc...
+decord.bridge.set_bridge('torch')
+
+width = 320
+height = 240
+dir = f'/data/quake-gameplay-dataset/download/{width}x{height}'
+video_files = [f for f in os.listdir(dir)
+               if f.endswith('.mp4')]
+num_frames = 1 # Likely (but not always) synonymous with batch_size
+batch_shape = (num_frames, width, height, 3)
+vl = VideoLoader(video_files,
+                 ctx=[cpu(0)],
+                 shape=batch_shape,
+                 interval=0,
+                 skip=0,
+                 shuffle=1)
+frame_data, indices = vl.next()
+# `frame_data` contains the decoded frames
+assert type(frame_data) == torch.Tensor
+assert frame_data.shape == batch_shape
+# `indices` is the (video_num, frame_num) for each frame
+assert indices.shape == (num_frames, 2)
+``` 
+
 ## Compiling From Raw
 The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository.
 
