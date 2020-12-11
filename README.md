@@ -10,7 +10,6 @@ There are no class labels or ground truth; this dataset is primarily intended fo
 Custom maps and a few weapon/enemy mods made their way into dataset. Future efforts may be directed at "purifying" the data in ways such as omitting these custom weapons.
 
 ## Resolutions
-
 | Resolution      | FPS | Size (GiB) | % Reduction | Download (.zip)
 | --------------- | --- | ---------- | ----------- | --------
 | 320x240         | 15  | -          | -           | TODO
@@ -18,6 +17,25 @@ Custom maps and a few weapon/enemy mods made their way into dataset. Future effo
 | Source*         | 30  | 233        | 0           | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/raw.zip)
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
+
+## S3 Hosting
+The data can be downloaded with the [AWS Command Line Interface](https://aws.amazon.com/cli/) or compatible S3 API. Folders in the S3 bucket are named according to the resolution video they contain. Because the bucket contains all resolutions in both .mp4 and .zip format, syncing the entire bucket is highly redundant and discouraged. `s3 sync` is the recommended download method for slow or interruptible connections, as it can stopped and resumed without issue.
+
+```bash
+mkdir quake-gameplay-dataset
+cd quake-gameplay-dataset
+
+# The resolutions are available as both folders and zip files
+# --no-sign-request allows use of awscli without credentials
+aws s3 ls --endpoint https://nyc3.digitaloceanspaces.com --no-sign-request s3://quake-gameplay-dataset/
+
+# Sync only the folder with the resolution you want
+aws s3 sync --endpoint https://nyc3.digitaloceanspaces.com --no-sign-request s3://quake-gameplay-dataset/320x240 320x240
+```
+
+The hosting costs for this project are negligible, but an inconsiderately written download script could easily change this. I kindly ask that you be courteous w.r.t. redundant downloads, and cache locally where appropriate. If necessary, I will delist the .mp4 files from the bucket and only make the zip files available.
+
+**If your goal is to copy the entire bucket for the purpose of hosting a duplicate copy for others to use, by all means download the entire bucket.**
 
 ## Compiling From Raw
 The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository.
