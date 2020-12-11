@@ -1,7 +1,7 @@
 # Quake Gameplay Dataset
 ![Example Thumbnails](images/thumbnails.gif)
 
-**UPDATE DEC 8, 2020: VIDEO LIST IS ASSEMBLED, PENDING COMPILATION**
+**UPDATE DEC 11, 2020: RAW VIDEOS POSTED, LOWER RESOLUTIONS ARE BEING CONVERTED**
 
 This is a collection of Quake gameplay footage that has been preprocessed such that it is appropriate for use in as a deep learning dataset.
 
