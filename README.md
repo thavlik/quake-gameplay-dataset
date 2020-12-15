@@ -1,7 +1,7 @@
 # Quake Gameplay Dataset
 ![Example Thumbnails](images/thumbnails.gif)
 
-**UPDATE DEC 13, 2020: 320x240 RELEASED, 640x480 IS CONVERTING**
+**UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
 
 This is a collection of Quake gameplay footage that has been preprocessed such that it is appropriate for use in as a deep learning dataset.
 
@@ -13,7 +13,7 @@ Custom maps and a few weapon/enemy mods made their way into dataset. Future effo
 | Resolution      | FPS | Size (GiB) | % Reduction | Download (.zip)
 | --------------- | --- | ---------- | ----------- | --------
 | 320x240         | 15  | 29         | 88          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/320x240.zip)
-| 640x480         | 15  | -          | -           | TODO
+| 640x480         | 15  | 87         | 63          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/640x480.zip)
 | Source*         | 30  | 233        | 0           | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/raw.zip)
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
