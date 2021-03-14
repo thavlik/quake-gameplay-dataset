@@ -3,11 +3,11 @@
 
 **UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
 
-This is a collection of Quake gameplay footage that has been preprocessed such that it is appropriate for use in as a deep learning dataset.
+This is a collection of Quake 1 gameplay footage that has been preprocessed such that it is appropriate for use in as a deep learning dataset.
 
 There are no class labels or ground truth; this dataset is primarily intended for unsupervised learning.
 
-Custom maps and a few weapon/enemy mods made their way into dataset. Future efforts may be directed at "purifying" the data in ways such as omitting these custom weapons.
+A few videos containing weapon/enemy mods made their way into dataset. Future efforts may be directed at "purifying" the data in ways such as omitting these custom weapons.
 
 ## Resolutions
 | Resolution      | FPS | Size (GiB) | % Reduction | Download (.zip)
@@ -88,7 +88,7 @@ If you would like to contribute, please open an issue or submit a pull request w
 ## License
 All videos are property of their respective creators. Permission to transform and redistribute was granted in each case. This project makes no claims of ownership to the data.
 
-This project's code is released under MIT / Apache 2.0 dual license, which is extremely permissive.
+This project's code is released under [MIT](LICENSE-MIT) / [Apache 2.0](LICENSE-Apache) 2.0 dual license, which is extremely permissive.
 
 ## Related Projects
 - [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset)
