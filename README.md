@@ -14,7 +14,7 @@ A few videos containing weapon/enemy mods made their way into dataset. Future ef
 | --------------- | --- | ---------- | ----------- | --------
 | 320x240         | 15  | 29         | 88          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/320x240.zip)
 | 640x480         | 15  | 87         | 63          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/640x480.zip)
-| Source*         | 30  | 233        | None (raw)  | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/raw.zip)
+| Source*         | 30  | 233        | 0 (raw)     | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/raw.zip)
 
 \* Most raw videos are at 1080p/720p but some are at lower resolutions
 
