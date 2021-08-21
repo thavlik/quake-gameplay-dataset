@@ -43,6 +43,7 @@ There are several existing Python solutions for loading frames from a directory 
 ```python
 import os
 import torch
+import decord
 from decord import VideoLoader, cpu
 
 # Configure decord to output torch.Tensor
@@ -51,10 +52,11 @@ decord.bridge.set_bridge('torch')
 
 width = 320
 height = 240
-dir = f'/data/quake-gameplay-dataset/download/{width}x{height}'
-video_files = [f for f in os.listdir(dir)
+dir = f'/data/quake-gameplay-dataset/{width}x{height}'
+video_files = [os.path.join(dir, f)
+               for f in os.listdir(dir)
                if f.endswith('.mp4')]
-num_frames = 1 # Likely (but not always) synonymous with batch_size
+num_frames = 1  # Likely (but not always) synonymous with batch_size
 batch_shape = (num_frames, width, height, 3)
 vl = VideoLoader(video_files,
                  ctx=[cpu(0)],
