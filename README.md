@@ -73,7 +73,7 @@ assert indices.shape == (num_frames, 2)
 ``` 
 
 ## Compiling From Raw
-The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository.
+The code for this project is maintained over in the [Doom Gameplay Dataset](https://github.com/thavlik/doom-gameplay-dataset) repository. It's much simpler to maintain only one repository for the compiler code.
 
 ## Contributors
 Gameplay videos are sourced from YouTube with permission. Special thanks to the following creators for their contributions to the community. They are good folk. 
@@ -85,7 +85,7 @@ Gameplay videos are sourced from YouTube with permission. Special thanks to the 
 - [Greenwood](https://www.youtube.com/channel/UCMAKW4cqyo-7Xm_zHewDtTQ)
 - [zigi](https://www.youtube.com/user/fibluzigi)
 
-If you would like to contribute, please open an issue or submit a pull request with links to YouTube videos or playlists.
+If you would like to contribute, please open an issue or submit a pull request with links to YouTube videos or playlists. The complete list of videos and playlists is [`raw/quake.txt`](raw/quake.txt).
 
 ## License
 All videos are property of their respective creators. Permission to transform and redistribute was granted in each case. This project makes no claims of ownership to the data.
