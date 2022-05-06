@@ -3,7 +3,7 @@
 
 **UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
 
-This is a collection of Quake 1 gameplay footage that has been preprocessed such that it is appropriate for use in as a deep learning dataset.
+This is a collection of Quake 1 gameplay footage that has been preprocessed such that it is appropriate for use as a deep learning dataset.
 
 There are no class labels or ground truth; this dataset is primarily intended for unsupervised learning.
 
