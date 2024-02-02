@@ -5,7 +5,7 @@
 [<img src="https://img.shields.io/badge/License-MIT-lightblue.svg">](./LICENSE-MIT)
 [<img src="https://img.shields.io/badge/Language-python-FFD43B.svg">](https://www.python.org/)
 
-**UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
+> **UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
 
 This is a collection of [Quake 1](https://en.wikipedia.org/wiki/Quake_(video_game)) gameplay footage that has been preprocessed such that it is appropriate for use as a deep learning dataset.
 
