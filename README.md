@@ -5,7 +5,7 @@
 [<img src="https://img.shields.io/badge/License-Apache_2.0-orange.svg">](./LICENSE-Apache)
 [<img src="https://img.shields.io/badge/License-MIT-lightblue.svg">](./LICENSE-MIT)
 
-> **UPDATE DEC 15, 2020: ALL RESOLUTIONS RELEASED**
+> **UPDATE MAY 13, 2024: Hosting costs for multiresolution are unsustainably expensive. Moving forward, only the resized videos will be available for download.**
 
 This is a collection of [Quake 1](https://en.wikipedia.org/wiki/Quake_(video_game)) gameplay footage that has been preprocessed such that it is appropriate for use as a deep learning dataset.
 
@@ -18,7 +18,7 @@ A few videos containing weapon/enemy mods made their way into dataset. Future ef
 | --------------- | --- | ---------- | ----------- | --------
 | 320x240         | 15  | 29         | 88          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/320x240.zip)
 | 640x480         | 15  | 87         | 63          | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/640x480.zip)
-| Source*         | 30  | 233        | 0 (raw)     | [Link](https://quake-gameplay-dataset.nyc3.digitaloceanspaces.com/raw.zip)
+| Source*         | 30  | 233        | 0 (raw)     | (Unavailable)
 
 > \* Most raw videos are at 1080p/720p but some are at lower resolutions
 
@@ -43,11 +43,6 @@ $ aws s3 sync \
     s3://quake-gameplay-dataset/320x240 \
     320x240
 ```
-
-The hosting costs for this project are negligible, but an inconsiderately written download script could easily change this. I kindly ask that you be courteous with redundant downloads, and cache locally where appropriate. If necessary, I will delist the .mp4 files from the bucket and only make the zip files available.
-
-**If your goal is to copy the entire bucket for the purpose of hosting a duplicate copy for others to use, by all means download the entire bucket.**
-
 
 ## How To Use
 There are several existing Python solutions for loading frames from a directory of videos. [decord](https://github.com/dmlc/decord) is currently the most promising, given its narrowly tailored focus of machine learning. Generally, the API entails pointing the loader at a directory containing video files:
